@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65103F2B1C0409360043F948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65103F2A1C0409360043F948 /* AppDelegate.swift */; };
+		65103F2D1C0409360043F948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65103F2C1C0409360043F948 /* ViewController.swift */; };
+		65103F301C0409360043F948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65103F2E1C0409360043F948 /* Main.storyboard */; };
+		65103F321C0409360043F948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65103F311C0409360043F948 /* Assets.xcassets */; };
+		65103F351C0409360043F948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65103F331C0409360043F948 /* LaunchScreen.storyboard */; };
+		65103F401C0409370043F948 /* EWB_Design_SummitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65103F3F1C0409370043F948 /* EWB_Design_SummitTests.swift */; };
+		65103F4B1C0409370043F948 /* EWB_Design_SummitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65103F4A1C0409370043F948 /* EWB_Design_SummitUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65103F3C1C0409370043F948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65103F1F1C0409360043F948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65103F261C0409360043F948;
+			remoteInfo = "EWB Design Summit";
+		};
+		65103F471C0409370043F948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65103F1F1C0409360043F948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65103F261C0409360043F948;
+			remoteInfo = "EWB Design Summit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65103F271C0409360043F948 /* EWB Design Summit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EWB Design Summit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65103F2A1C0409360043F948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65103F2C1C0409360043F948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65103F2F1C0409360043F948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65103F311C0409360043F948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65103F341C0409360043F948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65103F361C0409360043F948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65103F3B1C0409370043F948 /* EWB Design SummitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EWB Design SummitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65103F3F1C0409370043F948 /* EWB_Design_SummitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWB_Design_SummitTests.swift; sourceTree = "<group>"; };
+		65103F411C0409370043F948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65103F461C0409370043F948 /* EWB Design SummitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EWB Design SummitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65103F4A1C0409370043F948 /* EWB_Design_SummitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWB_Design_SummitUITests.swift; sourceTree = "<group>"; };
+		65103F4C1C0409370043F948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65103F241C0409360043F948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65103F381C0409370043F948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65103F431C0409370043F948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65103F1E1C0409360043F948 = {
+			isa = PBXGroup;
+			children = (
+				65103F291C0409360043F948 /* EWB Design Summit */,
+				65103F3E1C0409370043F948 /* EWB Design SummitTests */,
+				65103F491C0409370043F948 /* EWB Design SummitUITests */,
+				65103F281C0409360043F948 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65103F281C0409360043F948 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65103F271C0409360043F948 /* EWB Design Summit.app */,
+				65103F3B1C0409370043F948 /* EWB Design SummitTests.xctest */,
+				65103F461C0409370043F948 /* EWB Design SummitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65103F291C0409360043F948 /* EWB Design Summit */ = {
+			isa = PBXGroup;
+			children = (
+				65103F2A1C0409360043F948 /* AppDelegate.swift */,
+				65103F2C1C0409360043F948 /* ViewController.swift */,
+				65103F2E1C0409360043F948 /* Main.storyboard */,
+				65103F311C0409360043F948 /* Assets.xcassets */,
+				65103F331C0409360043F948 /* LaunchScreen.storyboard */,
+				65103F361C0409360043F948 /* Info.plist */,
+			);
+			path = "EWB Design Summit";
+			sourceTree = "<group>";
+		};
+		65103F3E1C0409370043F948 /* EWB Design SummitTests */ = {
+			isa = PBXGroup;
+			children = (
+				65103F3F1C0409370043F948 /* EWB_Design_SummitTests.swift */,
+				65103F411C0409370043F948 /* Info.plist */,
+			);
+			path = "EWB Design SummitTests";
+			sourceTree = "<group>";
+		};
+		65103F491C0409370043F948 /* EWB Design SummitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65103F4A1C0409370043F948 /* EWB_Design_SummitUITests.swift */,
+				65103F4C1C0409370043F948 /* Info.plist */,
+			);
+			path = "EWB Design SummitUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65103F261C0409360043F948 /* EWB Design Summit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65103F4F1C0409370043F948 /* Build configuration list for PBXNativeTarget "EWB Design Summit" */;
+			buildPhases = (
+				65103F231C0409360043F948 /* Sources */,
+				65103F241C0409360043F948 /* Frameworks */,
+				65103F251C0409360043F948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EWB Design Summit";
+			productName = "EWB Design Summit";
+			productReference = 65103F271C0409360043F948 /* EWB Design Summit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65103F3A1C0409370043F948 /* EWB Design SummitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65103F521C0409370043F948 /* Build configuration list for PBXNativeTarget "EWB Design SummitTests" */;
+			buildPhases = (
+				65103F371C0409370043F948 /* Sources */,
+				65103F381C0409370043F948 /* Frameworks */,
+				65103F391C0409370043F948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65103F3D1C0409370043F948 /* PBXTargetDependency */,
+			);
+			name = "EWB Design SummitTests";
+			productName = "EWB Design SummitTests";
+			productReference = 65103F3B1C0409370043F948 /* EWB Design SummitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65103F451C0409370043F948 /* EWB Design SummitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65103F551C0409370043F948 /* Build configuration list for PBXNativeTarget "EWB Design SummitUITests" */;
+			buildPhases = (
+				65103F421C0409370043F948 /* Sources */,
+				65103F431C0409370043F948 /* Frameworks */,
+				65103F441C0409370043F948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65103F481C0409370043F948 /* PBXTargetDependency */,
+			);
+			name = "EWB Design SummitUITests";
+			productName = "EWB Design SummitUITests";
+			productReference = 65103F461C0409370043F948 /* EWB Design SummitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65103F1F1C0409360043F948 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Engineers Without Borders";
+				TargetAttributes = {
+					65103F261C0409360043F948 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					65103F3A1C0409370043F948 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 65103F261C0409360043F948;
+					};
+					65103F451C0409370043F948 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 65103F261C0409360043F948;
+					};
+				};
+			};
+			buildConfigurationList = 65103F221C0409360043F948 /* Build configuration list for PBXProject "EWB Design Summit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65103F1E1C0409360043F948;
+			productRefGroup = 65103F281C0409360043F948 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65103F261C0409360043F948 /* EWB Design Summit */,
+				65103F3A1C0409370043F948 /* EWB Design SummitTests */,
+				65103F451C0409370043F948 /* EWB Design SummitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65103F251C0409360043F948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65103F351C0409360043F948 /* LaunchScreen.storyboard in Resources */,
+				65103F321C0409360043F948 /* Assets.xcassets in Resources */,
+				65103F301C0409360043F948 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65103F391C0409370043F948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65103F441C0409370043F948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65103F231C0409360043F948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65103F2D1C0409360043F948 /* ViewController.swift in Sources */,
+				65103F2B1C0409360043F948 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65103F371C0409370043F948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65103F401C0409370043F948 /* EWB_Design_SummitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65103F421C0409370043F948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65103F4B1C0409370043F948 /* EWB_Design_SummitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65103F3D1C0409370043F948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65103F261C0409360043F948 /* EWB Design Summit */;
+			targetProxy = 65103F3C1C0409370043F948 /* PBXContainerItemProxy */;
+		};
+		65103F481C0409370043F948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65103F261C0409360043F948 /* EWB Design Summit */;
+			targetProxy = 65103F471C0409370043F948 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65103F2E1C0409360043F948 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65103F2F1C0409360043F948 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65103F331C0409360043F948 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65103F341C0409360043F948 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65103F4D1C0409370043F948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65103F4E1C0409370043F948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65103F501C0409370043F948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "EWB Design Summit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.org.ewb.EWB-Design-Summit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		65103F511C0409370043F948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "EWB Design Summit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.org.ewb.EWB-Design-Summit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		65103F531C0409370043F948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "EWB Design SummitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.org.ewb.EWB-Design-SummitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EWB Design Summit.app/EWB Design Summit";
+			};
+			name = Debug;
+		};
+		65103F541C0409370043F948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "EWB Design SummitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.org.ewb.EWB-Design-SummitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EWB Design Summit.app/EWB Design Summit";
+			};
+			name = Release;
+		};
+		65103F561C0409370043F948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "EWB Design SummitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.org.ewb.EWB-Design-SummitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "EWB Design Summit";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		65103F571C0409370043F948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "EWB Design SummitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.org.ewb.EWB-Design-SummitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "EWB Design Summit";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65103F221C0409360043F948 /* Build configuration list for PBXProject "EWB Design Summit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65103F4D1C0409370043F948 /* Debug */,
+				65103F4E1C0409370043F948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65103F4F1C0409370043F948 /* Build configuration list for PBXNativeTarget "EWB Design Summit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65103F501C0409370043F948 /* Debug */,
+				65103F511C0409370043F948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65103F521C0409370043F948 /* Build configuration list for PBXNativeTarget "EWB Design SummitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65103F531C0409370043F948 /* Debug */,
+				65103F541C0409370043F948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65103F551C0409370043F948 /* Build configuration list for PBXNativeTarget "EWB Design SummitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65103F561C0409370043F948 /* Debug */,
+				65103F571C0409370043F948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65103F1F1C0409360043F948 /* Project object */;
+}
