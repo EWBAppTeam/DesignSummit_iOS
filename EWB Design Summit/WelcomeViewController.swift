@@ -8,12 +8,21 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController, UITextFieldDelegate {
 
+    //MARK: Properties
+    @IBOutlet weak var emailAddressField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // Handle the text field’s user input through delegate callbacks.
+        emailAddressField.delegate = self
+        passwordField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +30,43 @@ class WelcomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: UITextFieldDelegate
+    
 
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        
+        if textField == self.emailAddressField{
+            self.passwordField.becomeFirstResponder()
+        }
+        
+        return true
+    }
+    
+
+    
+    // MARK: Actions
+    
+
+    @IBAction func emailAddressFieldEditDidEnd(sender: UITextField) {
+        self.passwordField.resignFirstResponder()
+    }
+  
+    @IBAction func passwordFieldEditDidEnd(sender: UITextField) {
+        self.emailAddressField.resignFirstResponder()
+    }
+    
+    // Gesture Recogniser on ViewController, resignedfirst responder to hide keyboard when tapped outside of an object
+    @IBAction func TapCommonArea(sender: UITapGestureRecognizer) {
+        emailAddressField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

@@ -26,10 +26,9 @@
                                     <constraint firstAttribute="width" constant="200" id="QQX-im-ytr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
-                                    <action selector="emailAdrressTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="2Ue-jl-OXz"/>
-                                    <action selector="emailTextFieldNext:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="qdb-2U-f66"/>
+                                    <action selector="emailAddressFieldEditDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="gUD-NB-Qwu"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sX8-rc-f4s">
@@ -37,6 +36,9 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="passwordFieldEditDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="yBq-0z-cOn"/>
+                                </connections>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="260" verticalHuggingPriority="260" distribution="fillEqually" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="3Jz-Z6-h2n">
                                 <rect key="frame" x="200" y="285" width="200" height="30"/>
@@ -75,6 +77,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="sX8-rc-f4s" firstAttribute="top" secondItem="Qr7-HT-2uU" secondAttribute="bottom" constant="8" id="0Lq-0w-FI8"/>
                             <constraint firstItem="sX8-rc-f4s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5BM-fc-L22"/>
@@ -95,12 +98,24 @@
                                 <exclude reference="5BM-fc-L22"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6ef-I5-wIG" appends="YES" id="V0c-f4-6Xa"/>
+                        </connections>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="emailAddressField" destination="Qr7-HT-2uU" id="O83-HN-iX5"/>
+                        <outlet property="passwordField" destination="sX8-rc-f4s" id="tB1-Yw-u8U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6ef-I5-wIG">
+                    <connections>
+                        <action selector="TapCommonArea:" destination="BYZ-38-t0r" id="FtF-Sw-fVj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="24" y="532"/>
         </scene>
@@ -141,13 +156,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="520" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C91-Un-0dn">
                                                 <rect key="frame" x="0.0" y="35" width="520" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                             </textField>
                                         </subviews>
                                         <animations/>
@@ -159,13 +174,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="520" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6l1-Ve-hoU">
                                                 <rect key="frame" x="0.0" y="36" width="520" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                                             </textField>
                                         </subviews>
                                         <animations/>
@@ -177,13 +192,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="520" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p35-T0-zkR">
                                                 <rect key="frame" x="0.0" y="36" width="520" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ehR-w2-mhN">
                                                 <rect key="frame" x="0.0" y="72" width="520" height="30"/>
@@ -192,13 +207,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="258" height="30"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Post Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TWs-gZ-A14">
                                                         <rect key="frame" x="263" y="0.0" width="257" height="30"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
                                                     </textField>
                                                 </subviews>
                                                 <animations/>
@@ -210,7 +225,7 @@
                                         <rect key="frame" x="20" y="293" width="520" height="30"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <animations/>
@@ -229,6 +244,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="viv-ed-O1Z" firstAttribute="centerX" secondItem="eKM-VI-EWg" secondAttribute="centerX" id="8Ew-V3-oUo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="j27-3A-xWH" secondAttribute="trailing" id="SVm-rF-O7a"/>
@@ -238,9 +254,28 @@
                             <constraint firstItem="j27-3A-xWH" firstAttribute="leading" secondItem="eKM-VI-EWg" secondAttribute="leadingMargin" id="m2N-rT-kgJ"/>
                             <constraint firstItem="DKQ-0R-qEO" firstAttribute="centerX" secondItem="eKM-VI-EWg" secondAttribute="centerX" id="t9a-SF-zLr"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pCA-Fi-0UW" appends="YES" id="Gft-1s-MUC"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="CityTextField" destination="p35-T0-zkR" id="iJ3-SY-az2"/>
+                        <outlet property="EmailAddressTextField" destination="6l1-Ve-hoU" id="p86-Fo-lrN"/>
+                        <outlet property="FirstNameTextField" destination="jfl-rZ-pC8" id="PjW-tO-nxY"/>
+                        <outlet property="HomeAddressTextField" destination="jXJ-NO-ycb" id="nvO-5g-5Pe"/>
+                        <outlet property="LastNameTextField" destination="C91-Un-0dn" id="oOd-2O-jaw"/>
+                        <outlet property="PhoneNumberTextField" destination="FOY-D9-sNc" id="qAk-Rl-0cJ"/>
+                        <outlet property="PostCodeTextField" destination="TWs-gZ-A14" id="fTQ-Nq-EYC"/>
+                        <outlet property="SetPasswordTextField" destination="IHP-UX-nNC" id="Ez8-au-JaG"/>
+                        <outlet property="StateTextField" destination="2n1-sv-7Ep" id="hFE-1C-fLP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzK-12-Xh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pCA-Fi-0UW">
+                    <connections>
+                        <action selector="TapEmptySpace:" destination="Ub5-MP-Vps" id="wDd-jo-aui"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="24" y="1354"/>
         </scene>
