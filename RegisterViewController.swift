@@ -130,14 +130,33 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     
 
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+    
+        if (segue.identifier == "submit") {
+            let navController = segue.destinationViewController as! UINavigationController
+            let detailController = navController.topViewController as! HomeViewController
+            detailController.name =  "Welcome,   \(FirstNameTextField.text!)  \(LastNameTextField.text!)"
+        }
+        
+        /*
+        // In a storyboard-based application, you will often want to do a little preparation before navigation
+        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+        }
+        */
 
+    }
+    
 }
+
+
+
+
+
+
+
+

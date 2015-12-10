@@ -59,12 +59,13 @@
                                             <segue destination="Ub5-MP-Vps" kind="show" id="Wgx-4N-oaJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfu-Cq-KMY">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="loginButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfu-Cq-KMY">
                                         <rect key="frame" x="106" y="0.0" width="94" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <segue destination="tSn-fK-fBv" kind="show" id="C5z-SV-yuP"/>
+                                            <action selector="loginButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SD3-xb-iUO"/>
+                                            <segue destination="tSn-fK-fBv" kind="show" identifier="login" id="OS5-Qa-AAL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -107,6 +108,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="emailAddressField" destination="Qr7-HT-2uU" id="O83-HN-iX5"/>
+                        <outlet property="loginButton" destination="Cfu-Cq-KMY" id="vup-jB-4tX"/>
                         <outlet property="passwordField" destination="sX8-rc-f4s" id="tB1-Yw-u8U"/>
                     </connections>
                 </viewController>
@@ -143,7 +145,7 @@
                                 <animations/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="tSn-fK-fBv" kind="show" id="J4U-8H-rNa"/>
+                                    <segue destination="tSn-fK-fBv" kind="show" identifier="submit" id="J4U-8H-rNa"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="j27-3A-xWH">
@@ -344,15 +346,30 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="b5F-Ca-iqH">
                                 <rect key="frame" x="530" y="64" width="50" height="50"/>
                                 <animations/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="NEG-wP-7tg"/>
                                     <constraint firstAttribute="height" constant="50" id="lm6-mA-bfC"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DVH-fV-PMv" appends="YES" id="c0X-TZ-uEM"/>
+                                </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="welcomeLabelID" text="Welcome, Daniel Freeman" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fg-d0-4jn">
+                                <rect key="frame" x="184" y="93" width="338" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="SSa-fq-XtS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2Fg-d0-4jn" firstAttribute="bottom" secondItem="b5F-Ca-iqH" secondAttribute="bottom" id="3Lc-p9-djr"/>
                             <constraint firstItem="AJG-Ug-Iwe" firstAttribute="leading" secondItem="2Un-OG-oWF" secondAttribute="leading" id="5zg-XO-lDf"/>
                             <constraint firstItem="s8O-W8-p8P" firstAttribute="top" secondItem="AJG-Ug-Iwe" secondAttribute="bottom" id="6a5-BU-GTO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AJG-Ug-Iwe" secondAttribute="trailing" id="9mF-TT-0Id"/>
@@ -361,6 +378,7 @@
                             <constraint firstItem="J6Z-Fw-aNC" firstAttribute="centerX" secondItem="2Un-OG-oWF" secondAttribute="centerX" id="Td7-ha-mVO"/>
                             <constraint firstItem="b5F-Ca-iqH" firstAttribute="trailing" secondItem="2Un-OG-oWF" secondAttribute="trailingMargin" id="cL8-lR-rI6"/>
                             <constraint firstItem="AJG-Ug-Iwe" firstAttribute="centerX" secondItem="2Un-OG-oWF" secondAttribute="centerX" id="e5v-ND-IcC"/>
+                            <constraint firstItem="b5F-Ca-iqH" firstAttribute="leading" secondItem="2Fg-d0-4jn" secondAttribute="trailing" constant="8" symbolic="YES" id="grP-Pi-NJx"/>
                             <constraint firstAttribute="trailing" secondItem="AJG-Ug-Iwe" secondAttribute="trailing" id="jZT-Fs-3mY"/>
                             <constraint firstItem="AJG-Ug-Iwe" firstAttribute="leading" secondItem="2Un-OG-oWF" secondAttribute="leadingMargin" id="n2q-M9-MUR"/>
                             <constraint firstItem="s8O-W8-p8P" firstAttribute="top" secondItem="AJG-Ug-Iwe" secondAttribute="bottom" id="tLp-DC-VXM"/>
@@ -376,8 +394,16 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="mjO-cE-wBP"/>
+                    <connections>
+                        <outlet property="WelcomeLabel" destination="2Fg-d0-4jn" id="F8T-2x-pYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2i1-5v-zQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DVH-fV-PMv">
+                    <connections>
+                        <segue destination="Ub5-MP-Vps" kind="show" id="NYl-Bs-imJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1549" y="532"/>
         </scene>
@@ -502,7 +528,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iil-oe-Gcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737" y="532"/>
+            <point key="canvasLocation" x="781" y="540"/>
         </scene>
     </scenes>
     <resources>
@@ -511,6 +537,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="J4U-8H-rNa"/>
+        <segue reference="NYl-Bs-imJ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.12549019610000001" green="0.60392156860000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
 </document>

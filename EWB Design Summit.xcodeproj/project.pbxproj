@@ -14,6 +14,7 @@
 		65103F401C0409370043F948 /* EWB_Design_SummitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65103F3F1C0409370043F948 /* EWB_Design_SummitTests.swift */; };
 		65103F4B1C0409370043F948 /* EWB_Design_SummitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65103F4A1C0409370043F948 /* EWB_Design_SummitUITests.swift */; };
 		6539417E1C191DE000B5DAB6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6539417D1C191DE000B5DAB6 /* Person.swift */; };
+		653941801C19386600B5DAB6 /* AppStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6539417F1C19386600B5DAB6 /* AppStatus.swift */; };
 		65DDF2631C0D456D00C7588F /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2621C0D456D00C7588F /* RatingControl.swift */; };
 		65DDF2651C0D49A700C7588F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2641C0D49A700C7588F /* HomeViewController.swift */; };
 		65DDF2671C0D49EE00C7588F /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */; };
@@ -55,6 +56,7 @@
 		65103F4A1C0409370043F948 /* EWB_Design_SummitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWB_Design_SummitUITests.swift; sourceTree = "<group>"; };
 		65103F4C1C0409370043F948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6539417D1C191DE000B5DAB6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		6539417F1C19386600B5DAB6 /* AppStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStatus.swift; sourceTree = "<group>"; };
 		65DDF2621C0D456D00C7588F /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		65DDF2641C0D49A700C7588F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedbackViewController.swift; path = ../FeedbackViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		65103F291C0409360043F948 /* EWB Design Summit */ = {
 			isa = PBXGroup;
 			children = (
+				6539417F1C19386600B5DAB6 /* AppStatus.swift */,
 				6539417C1C191DB800B5DAB6 /* Login / User */,
 				65103F2A1C0409360043F948 /* AppDelegate.swift */,
 				65DDF2641C0D49A700C7588F /* HomeViewController.swift */,
@@ -150,9 +153,9 @@
 		6539417C1C191DB800B5DAB6 /* Login / User */ = {
 			isa = PBXGroup;
 			children = (
+				6539417D1C191DE000B5DAB6 /* Person.swift */,
 				65DDF2701C0D652A00C7588F /* WelcomeViewController.swift */,
 				65DDF2681C0D5F6F00C7588F /* RegisterViewController.swift */,
-				6539417D1C191DE000B5DAB6 /* Person.swift */,
 			);
 			name = "Login / User";
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				65DDF2651C0D49A700C7588F /* HomeViewController.swift in Sources */,
 				65DDF2671C0D49EE00C7588F /* FeedbackViewController.swift in Sources */,
 				65DDF26D1C0D64D300C7588F /* ScheduleViewController.swift in Sources */,
+				653941801C19386600B5DAB6 /* AppStatus.swift in Sources */,
 				65DDF26F1C0D64F500C7588F /* InfoViewController.swift in Sources */,
 				65DDF2691C0D5F6F00C7588F /* RegisterViewController.swift in Sources */,
 				65DDF2631C0D456D00C7588F /* RatingControl.swift in Sources */,

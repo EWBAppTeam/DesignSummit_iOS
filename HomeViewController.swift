@@ -10,8 +10,20 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    //MARK: Properties
+    var message: String!
+    var name: String!
+    
+    
+    @IBOutlet weak var WelcomeLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        message = "Welcome, "
+        WelcomeLabel.text = name
+        
 
         // Do any additional setup after loading the view.
     }

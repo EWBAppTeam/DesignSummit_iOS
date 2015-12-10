@@ -9,16 +9,18 @@
 import UIKit
 
 class WelcomeViewController: UIViewController, UITextFieldDelegate {
+    
+    var person: Person!
+    var status: AppStatus!
 
     //MARK: Properties
     @IBOutlet weak var emailAddressField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
         
         // Handle the text field’s user input through delegate callbacks.
         emailAddressField.delegate = self
@@ -64,17 +66,65 @@ class WelcomeViewController: UIViewController, UITextFieldDelegate {
         passwordField.resignFirstResponder()
     }
     
+    @IBAction func loginButtonPushed(sender: UIButton) {
+        person = Person(firstName: "first", lastName: "Last", emailAddress: "\(emailAddressField.text)", password: "\(passwordField.text)")
+        
+        
+    }
+
     
     
     
-    /*
+    
+    
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if (segue.identifier == "login") {
+            let navController = segue.destinationViewController as! UINavigationController
+            let detailController = navController.topViewController as! HomeViewController
+            detailController.message =  emailAddressField.text
+        }
+        
+        
+        
+        
+        
+//        
+//        if loginButton === sender{
+//            let emailAddress = emailAddressField.text ?? "testEmail"
+//            let password = passwordField.text ?? "test"
+//            
+//            // Set the meal to be passed to MealTableViewController after the unwind segue.
+//            person = Person(firstName: "Tom", lastName: "Jones", emailAddress: emailAddress, password: password)
+//            
+//            
+//        }
+//    
+//        if segue.identifier == "login"{
+//            let emailAddress = emailAddressField.text ?? "testEmail"
+//            let password = passwordField.text ?? "test"
+//            
+//            // Set the meal to be passed to MealTableViewController after the unwind segue.
+//            person = Person(firstName: "Jimi", lastName: "Hendrix", emailAddress: emailAddress, password: password)
+//            
+//            
+//            let svc = segue.destinationViewController as! HomeViewController;
+//            
+//            svc.message = emailAddressField.text
+//            
+//        }
+        
+//         Get the new view controller using segue.destinationViewController.
+//         Pass the selected object to the new view controller.
+        
+        
     }
-    */
+    
+  
+    
 
 }
