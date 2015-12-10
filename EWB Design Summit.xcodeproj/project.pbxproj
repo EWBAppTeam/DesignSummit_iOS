@@ -13,6 +13,7 @@
 		65103F351C0409360043F948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65103F331C0409360043F948 /* LaunchScreen.storyboard */; };
 		65103F401C0409370043F948 /* EWB_Design_SummitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65103F3F1C0409370043F948 /* EWB_Design_SummitTests.swift */; };
 		65103F4B1C0409370043F948 /* EWB_Design_SummitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65103F4A1C0409370043F948 /* EWB_Design_SummitUITests.swift */; };
+		6539417E1C191DE000B5DAB6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6539417D1C191DE000B5DAB6 /* Person.swift */; };
 		65DDF2631C0D456D00C7588F /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2621C0D456D00C7588F /* RatingControl.swift */; };
 		65DDF2651C0D49A700C7588F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2641C0D49A700C7588F /* HomeViewController.swift */; };
 		65DDF2671C0D49EE00C7588F /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */; };
@@ -53,6 +54,7 @@
 		65103F461C0409370043F948 /* EWB Design SummitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EWB Design SummitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65103F4A1C0409370043F948 /* EWB_Design_SummitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWB_Design_SummitUITests.swift; sourceTree = "<group>"; };
 		65103F4C1C0409370043F948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6539417D1C191DE000B5DAB6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		65DDF2621C0D456D00C7588F /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		65DDF2641C0D49A700C7588F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedbackViewController.swift; path = ../FeedbackViewController.swift; sourceTree = "<group>"; };
@@ -111,9 +113,8 @@
 		65103F291C0409360043F948 /* EWB Design Summit */ = {
 			isa = PBXGroup;
 			children = (
+				6539417C1C191DB800B5DAB6 /* Login / User */,
 				65103F2A1C0409360043F948 /* AppDelegate.swift */,
-				65DDF2701C0D652A00C7588F /* WelcomeViewController.swift */,
-				65DDF2681C0D5F6F00C7588F /* RegisterViewController.swift */,
 				65DDF2641C0D49A700C7588F /* HomeViewController.swift */,
 				65DDF26E1C0D64F500C7588F /* InfoViewController.swift */,
 				65DDF26C1C0D64D300C7588F /* ScheduleViewController.swift */,
@@ -144,6 +145,16 @@
 				65103F4C1C0409370043F948 /* Info.plist */,
 			);
 			path = "EWB Design SummitUITests";
+			sourceTree = "<group>";
+		};
+		6539417C1C191DB800B5DAB6 /* Login / User */ = {
+			isa = PBXGroup;
+			children = (
+				65DDF2701C0D652A00C7588F /* WelcomeViewController.swift */,
+				65DDF2681C0D5F6F00C7588F /* RegisterViewController.swift */,
+				6539417D1C191DE000B5DAB6 /* Person.swift */,
+			);
+			name = "Login / User";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6539417E1C191DE000B5DAB6 /* Person.swift in Sources */,
 				65DDF26B1C0D64A400C7588F /* LocationsViewController.swift in Sources */,
 				65DDF2711C0D652A00C7588F /* WelcomeViewController.swift in Sources */,
 				65DDF2651C0D49A700C7588F /* HomeViewController.swift in Sources */,
