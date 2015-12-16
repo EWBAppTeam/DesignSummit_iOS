@@ -168,8 +168,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         
             
             let welcome = segue.destinationViewController as! WelcomeViewController
-            
-            welcome.persons.append(person!)
+
+            welcome.newPerson = person
+        
             
         //}
         

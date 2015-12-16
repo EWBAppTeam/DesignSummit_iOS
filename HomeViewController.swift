@@ -13,8 +13,8 @@ class HomeViewController: UIViewController {
     //MARK: Properties
     var message: String!
     var name: String!
-    let SliderValueKey = "ISLOGGEDIN"
-    var value:Float = 0;
+    let LoggedInStateKey = "ISLOGGEDIN"
+    var userFound:Int = -3;
     
     @IBOutlet weak var WelcomeLabel: UILabel!
     
@@ -37,8 +37,8 @@ class HomeViewController: UIViewController {
     
 
     @IBAction func logout(sender: UIButton) {
-        value = 0
-        NSUserDefaults.standardUserDefaults().setFloat(value, forKey: SliderValueKey)
+        userFound = -3
+        NSUserDefaults.standardUserDefaults().setInteger(userFound, forKey: LoggedInStateKey)
         dismissViewControllerAnimated(true, completion: nil)
         
     }
