@@ -27,10 +27,15 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var SetPasswordTextField: UITextField!
     
+    var person: Person?
+   // var persons = [Person]()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         FirstNameTextField.delegate = self
         LastNameTextField.delegate = self
@@ -128,6 +133,24 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         self.SetPasswordTextField.resignFirstResponder()
     }
     
+    @IBAction func SubmitButtonTapped(sender: UIButton) {
+        
+        //TODO: Save details of user to file
+        let firstName = FirstNameTextField.text
+        let lastName = LastNameTextField.text
+        let email = EmailAddressTextField.text
+        let password = SetPasswordTextField.text
+        
+        // Set the meal to be passed to MealTableViewController after the unwind segue.
+        person = Person(firstName: firstName!, lastName: lastName!, emailAddress: email!, password: password!)
+        
+        //performSegueWithIdentifier("submit", sender: sender)
+        
+        //dismissViewControllerAnimated(true, completion: nil)
+        
+        
+        //savePersons()
+    }
     
 
     
@@ -135,11 +158,20 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
     
-        if (segue.identifier == "submit") {
+        /* if (segue.identifier == "submit") {
+            
+            
             let navController = segue.destinationViewController as! UINavigationController
             let detailController = navController.topViewController as! HomeViewController
-            detailController.name =  "Welcome,   \(FirstNameTextField.text!)  \(LastNameTextField.text!)"
-        }
+            detailController.name =  "Welcome, \(FirstNameTextField.text!) \(LastNameTextField.text!)"
+            */
+        
+            
+            let welcome = segue.destinationViewController as! WelcomeViewController
+            
+            welcome.persons.append(person!)
+            
+        //}
         
         /*
         // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -151,6 +183,22 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
 
     }
     
+    /*
+    func savePersons() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(persons, toFile: Person.ArchiveURL.path!)
+        print("Saved")
+        
+        if !isSuccessfulSave {
+            print("Failed to save persons...")
+        }
+    }
+    
+    
+    func loadPersons() -> [Person]? {
+        
+        return NSKeyedUnarchiver.unarchiveObjectWithFile(Person.ArchiveURL.path!) as? [Person]
+    }
+    */
 }
 
 
