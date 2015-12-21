@@ -119,7 +119,7 @@
 				6539417C1C191DB800B5DAB6 /* Login / User */,
 				65103F2A1C0409360043F948 /* AppDelegate.swift */,
 				65DDF2641C0D49A700C7588F /* HomeViewController.swift */,
-				65DDF26E1C0D64F500C7588F /* InfoViewController.swift */,
+				65E0500F1C211D2B00BDF841 /* Info */,
 				65DDF26C1C0D64D300C7588F /* ScheduleViewController.swift */,
 				65DDF26A1C0D64A400C7588F /* LocationsViewController.swift */,
 				65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */,
@@ -158,6 +158,14 @@
 				65DDF2681C0D5F6F00C7588F /* RegisterViewController.swift */,
 			);
 			name = "Login / User";
+			sourceTree = "<group>";
+		};
+		65E0500F1C211D2B00BDF841 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				65DDF26E1C0D64F500C7588F /* InfoViewController.swift */,
+			);
+			name = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

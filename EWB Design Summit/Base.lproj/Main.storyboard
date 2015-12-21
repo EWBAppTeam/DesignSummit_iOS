@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Welcome-->
@@ -80,13 +79,13 @@
                             <constraint firstItem="Qr7-HT-2uU" firstAttribute="leading" secondItem="sX8-rc-f4s" secondAttribute="leading" id="86R-hB-Nfc"/>
                             <constraint firstItem="3Jz-Z6-h2n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="As8-lY-IQe"/>
                             <constraint firstItem="3Jz-Z6-h2n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qb0-2x-XBR"/>
-                            <constraint firstItem="paW-IB-4vV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vpp-u1-L2j"/>
                             <constraint firstItem="Qr7-HT-2uU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YCX-D3-eNp"/>
                             <constraint firstItem="3Jz-Z6-h2n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yr5-3s-rYg"/>
+                            <constraint firstAttribute="bottom" secondItem="paW-IB-4vV" secondAttribute="bottom" constant="20" symbolic="YES" id="cHd-9I-QZg"/>
                             <constraint firstItem="Qr7-HT-2uU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kgs-WQ-Jc4"/>
                             <constraint firstItem="sX8-rc-f4s" firstAttribute="leading" secondItem="3Jz-Z6-h2n" secondAttribute="leading" id="tjy-wn-0Ul"/>
                             <constraint firstItem="3Jz-Z6-h2n" firstAttribute="top" secondItem="sX8-rc-f4s" secondAttribute="bottom" constant="8" id="w7l-BR-hPd"/>
-                            <constraint firstItem="paW-IB-4vV" firstAttribute="top" secondItem="3Jz-Z6-h2n" secondAttribute="bottom" multiplier="1.3" constant="14.5" id="y4N-Ha-bSr"/>
+                            <constraint firstItem="paW-IB-4vV" firstAttribute="centerX" secondItem="3Jz-Z6-h2n" secondAttribute="centerX" id="wlx-tp-Nc0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -315,55 +314,63 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EWB Image" translatesAutoresizingMaskIntoConstraints="NO" id="J6Z-Fw-aNC">
                                 <rect key="frame" x="154" y="222" width="292" height="156"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="b5F-Ca-iqH">
-                                <rect key="frame" x="20" y="64" width="50" height="50"/>
-                                <gestureRecognizers/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fck-mW-hHY">
+                                <rect key="frame" x="20" y="52" width="560" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="b5F-Ca-iqH">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="gKr-bU-Uho"/>
+                                            <constraint firstAttribute="width" constant="50" id="j3R-ct-jXW"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="DVH-fV-PMv" appends="YES" id="c0X-TZ-uEM"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="welcomeLabelID" text="Welcome, Daniel Freeman" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fg-d0-4jn">
+                                        <rect key="frame" x="55" y="0.0" width="400" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GjD-qc-zmo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tc-hM-uZH">
+                                        <rect key="frame" x="460" y="0.0" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="7bA-mi-FmN"/>
+                                            <constraint firstAttribute="height" constant="50" id="eha-4Y-5Pf"/>
+                                        </constraints>
+                                        <state key="normal" title="Log out"/>
+                                        <connections>
+                                            <action selector="logout:" destination="CU4-3p-acS" eventType="touchUpInside" id="9nQ-FE-UOR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="dLX-Ln-yqz"/>
-                                    <constraint firstAttribute="width" constant="50" id="s8g-Ll-ct7"/>
+                                    <constraint firstItem="2Fg-d0-4jn" firstAttribute="height" secondItem="b5F-Ca-iqH" secondAttribute="height" id="2Pz-yf-fRh"/>
+                                    <constraint firstAttribute="trailing" secondItem="7tc-hM-uZH" secondAttribute="trailing" id="3Dl-TJ-S7P"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="DVH-fV-PMv" appends="YES" id="c0X-TZ-uEM"/>
-                                </connections>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tc-hM-uZH">
-                                <rect key="frame" x="531" y="64" width="52" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="MLK-L4-KWR"/>
-                                </constraints>
-                                <state key="normal" title="Log out"/>
-                                <connections>
-                                    <action selector="logout:" destination="CU4-3p-acS" eventType="touchUpInside" id="9nQ-FE-UOR"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="welcomeLabelID" text="Welcome, Daniel Freeman" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fg-d0-4jn">
-                                <rect key="frame" x="78" y="64" width="445" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="R6O-Qr-KQl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="7tc-hM-uZH" secondAttribute="trailing" constant="-3" id="5wg-Kf-kTS"/>
                             <constraint firstItem="AJG-Ug-Iwe" firstAttribute="leading" secondItem="2Un-OG-oWF" secondAttribute="leading" id="5zg-XO-lDf"/>
                             <constraint firstItem="s8O-W8-p8P" firstAttribute="top" secondItem="AJG-Ug-Iwe" secondAttribute="bottom" id="6a5-BU-GTO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AJG-Ug-Iwe" secondAttribute="trailing" id="9mF-TT-0Id"/>
                             <constraint firstItem="J6Z-Fw-aNC" firstAttribute="centerY" secondItem="2Un-OG-oWF" secondAttribute="centerY" id="K1X-4y-S1g"/>
+                            <constraint firstItem="Fck-mW-hHY" firstAttribute="leading" secondItem="2Un-OG-oWF" secondAttribute="leadingMargin" id="QOG-gk-hZB"/>
                             <constraint firstItem="J6Z-Fw-aNC" firstAttribute="centerX" secondItem="2Un-OG-oWF" secondAttribute="centerX" id="Td7-ha-mVO"/>
-                            <constraint firstItem="7tc-hM-uZH" firstAttribute="top" secondItem="T6C-vV-BJG" secondAttribute="bottom" constant="20" id="UIM-NM-KsR"/>
-                            <constraint firstItem="2Fg-d0-4jn" firstAttribute="top" secondItem="T6C-vV-BJG" secondAttribute="bottom" constant="20" id="Ut7-iH-bkG"/>
-                            <constraint firstItem="2Fg-d0-4jn" firstAttribute="leading" secondItem="b5F-Ca-iqH" secondAttribute="trailing" constant="8" id="XsA-md-NGV"/>
-                            <constraint firstItem="b5F-Ca-iqH" firstAttribute="top" secondItem="T6C-vV-BJG" secondAttribute="bottom" constant="20" id="d73-ue-Jsv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fck-mW-hHY" secondAttribute="trailing" id="drU-R1-P6m"/>
                             <constraint firstItem="AJG-Ug-Iwe" firstAttribute="centerX" secondItem="2Un-OG-oWF" secondAttribute="centerX" id="e5v-ND-IcC"/>
+                            <constraint firstItem="Fck-mW-hHY" firstAttribute="leading" secondItem="2Un-OG-oWF" secondAttribute="leadingMargin" id="fHL-iN-GpX"/>
                             <constraint firstAttribute="trailing" secondItem="AJG-Ug-Iwe" secondAttribute="trailing" id="jZT-Fs-3mY"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="b5F-Ca-iqH" secondAttribute="leading" id="mAB-Az-bbv"/>
                             <constraint firstItem="AJG-Ug-Iwe" firstAttribute="leading" secondItem="2Un-OG-oWF" secondAttribute="leadingMargin" id="n2q-M9-MUR"/>
-                            <constraint firstItem="7tc-hM-uZH" firstAttribute="leading" secondItem="2Fg-d0-4jn" secondAttribute="trailing" constant="8" id="rir-9J-1M5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fck-mW-hHY" secondAttribute="trailing" id="opk-G5-a7i"/>
                             <constraint firstItem="s8O-W8-p8P" firstAttribute="top" secondItem="AJG-Ug-Iwe" secondAttribute="bottom" id="tLp-DC-VXM"/>
+                            <constraint firstItem="Fck-mW-hHY" firstAttribute="top" secondItem="T6C-vV-BJG" secondAttribute="bottom" constant="8" id="v1h-4f-eCQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -400,10 +407,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="cOh-zh-Ih1" id="5Vn-mZ-p6T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21s-ya-RFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2337" y="-186"/>
+            <point key="canvasLocation" x="2273" y="-321"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="d93-Zs-cOT">
