@@ -94,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		650503731C27BDEC00452F79 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				65DDF2621C0D456D00C7588F /* RatingControl.swift */,
+				65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */,
+			);
+			name = Feedback;
+			sourceTree = "<group>";
+		};
 		65103F1E1C0409360043F948 = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +133,7 @@
 				65E0500F1C211D2B00BDF841 /* Info */,
 				65DDF26C1C0D64D300C7588F /* ScheduleViewController.swift */,
 				65DDF26A1C0D64A400C7588F /* LocationsViewController.swift */,
-				65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */,
-				65DDF2621C0D456D00C7588F /* RatingControl.swift */,
+				650503731C27BDEC00452F79 /* Feedback */,
 				65103F2E1C0409360043F948 /* Main.storyboard */,
 				65103F311C0409360043F948 /* Assets.xcassets */,
 				65103F331C0409360043F948 /* LaunchScreen.storyboard */,
