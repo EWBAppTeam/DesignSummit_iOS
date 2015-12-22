@@ -7,14 +7,33 @@
 //
 
 import UIKit
+import WebKit
 
 class ScheduleViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet var scheduleView: UIView!
+    var webView: WKWebView?
+    
+    
+    override func loadView() {
+        print("loadView")
+        super.loadView()
+        
+        self.webView = WKWebView()
+        self.view = self.webView!
+        
     }
+    
+    
+    override func viewDidLoad() {
+        print("View did Load")
+        super.viewDidLoad()
+    
+            let url = NSURL(string:"https://docs.google.com/spreadsheets/d/197KreMD10sxggu0Vr5ZoTYP5qZnTukKY5qSNru9s9JA/edit?usp=sharing")
+            let req = NSURLRequest(URL:url!)
+            self.webView!.loadRequest(req)
+        }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,3 +52,6 @@ class ScheduleViewController: UIViewController {
     */
 
 }
+
+
+
