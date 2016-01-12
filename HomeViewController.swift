@@ -16,15 +16,13 @@ class HomeViewController: UIViewController {
     let LoggedInStateKey = "ISLOGGEDIN"
     var userFound:Int = -3;
     
-    @IBOutlet weak var WelcomeLabel: UILabel!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        WelcomeLabel.text = name
+    
         
 
         // Do any additional setup after loading the view.
@@ -36,12 +34,7 @@ class HomeViewController: UIViewController {
     }
     
 
-    @IBAction func logout(sender: UIButton) {
-        userFound = -3
-        NSUserDefaults.standardUserDefaults().setInteger(userFound, forKey: LoggedInStateKey)
-        dismissViewControllerAnimated(true, completion: nil)
-        
-    }
+
     
     
     

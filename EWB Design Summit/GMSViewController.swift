@@ -14,8 +14,10 @@ class GMSViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let camera = GMSCameraPosition.cameraWithLatitude(-33.86,
-            longitude: 151.20, zoom: 6)
+            longitude: 151.20, zoom: 11, bearing: 0, viewingAngle:0)
+        
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
         self.view = mapView
@@ -25,5 +27,13 @@ class GMSViewController: UIViewController {
         marker.title = "Sydney"
         marker.snippet = "Australia"
         marker.map = mapView
+        
+        let marker2 = GMSMarker()
+        marker2.position = CLLocationCoordinate2DMake(-27.86, 154.20)
+        marker2.title = "Melbourne"
+        marker2.snippet = "The best place to live in the world"
+        marker2.map = mapView
+        
+    
     }
 }

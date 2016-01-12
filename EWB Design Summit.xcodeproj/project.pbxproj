@@ -283,7 +283,7 @@
 				TargetAttributes = {
 					65103F261C0409360043F948 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = YX43SVRW35;
+						DevelopmentTeam = 8LELQL34M8;
 					};
 					65103F3A1C0409370043F948 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -552,6 +552,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "EWB Design Summit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.org.ewb.EWB-Design-Summit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -568,6 +569,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "EWB Design Summit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.org.ewb.EWB-Design-Summit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
