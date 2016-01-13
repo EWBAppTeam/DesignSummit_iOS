@@ -16,16 +16,11 @@
 		65103F4B1C0409370043F948 /* EWB_Design_SummitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65103F4A1C0409370043F948 /* EWB_Design_SummitUITests.swift */; };
 		651127131C28CECF0005CDE8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 651127121C28CECF0005CDE8 /* Podfile */; };
 		651FC2CF1C28D8360095C2CF /* GMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FC2CE1C28D8360095C2CF /* GMSViewController.swift */; };
-		6539417E1C191DE000B5DAB6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6539417D1C191DE000B5DAB6 /* Person.swift */; };
-		653941801C19386600B5DAB6 /* AppStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6539417F1C19386600B5DAB6 /* AppStatus.swift */; };
-		65DDF2631C0D456D00C7588F /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2621C0D456D00C7588F /* RatingControl.swift */; };
 		65DDF2651C0D49A700C7588F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2641C0D49A700C7588F /* HomeViewController.swift */; };
 		65DDF2671C0D49EE00C7588F /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */; };
-		65DDF2691C0D5F6F00C7588F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2681C0D5F6F00C7588F /* RegisterViewController.swift */; };
 		65DDF26B1C0D64A400C7588F /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF26A1C0D64A400C7588F /* LocationsViewController.swift */; };
 		65DDF26D1C0D64D300C7588F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF26C1C0D64D300C7588F /* ScheduleViewController.swift */; };
 		65DDF26F1C0D64F500C7588F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF26E1C0D64F500C7588F /* InfoViewController.swift */; };
-		65DDF2711C0D652A00C7588F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2701C0D652A00C7588F /* WelcomeViewController.swift */; };
 		65E050111C2784A900BDF841 /* DS Jan2016 Info.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65E050101C2784A900BDF841 /* DS Jan2016 Info.pdf */; };
 /* End PBXBuildFile section */
 
@@ -62,16 +57,11 @@
 		65103F4C1C0409370043F948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		651127121C28CECF0005CDE8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		651FC2CE1C28D8360095C2CF /* GMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMSViewController.swift; sourceTree = "<group>"; };
-		6539417D1C191DE000B5DAB6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		6539417F1C19386600B5DAB6 /* AppStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStatus.swift; sourceTree = "<group>"; };
-		65DDF2621C0D456D00C7588F /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		65DDF2641C0D49A700C7588F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedbackViewController.swift; path = ../FeedbackViewController.swift; sourceTree = "<group>"; };
-		65DDF2681C0D5F6F00C7588F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../RegisterViewController.swift; sourceTree = "<group>"; };
 		65DDF26A1C0D64A400C7588F /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		65DDF26C1C0D64D300C7588F /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		65DDF26E1C0D64F500C7588F /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		65DDF2701C0D652A00C7588F /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		65E050101C2784A900BDF841 /* DS Jan2016 Info.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "DS Jan2016 Info.pdf"; sourceTree = "<group>"; };
 		9BEA47E9E73A748DBF52FAC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA31BF0FBF9DB9B536C01930 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +96,6 @@
 		650503731C27BDEC00452F79 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
-				65DDF2621C0D456D00C7588F /* RatingControl.swift */,
 				65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */,
 			);
 			name = Feedback;
@@ -138,8 +127,6 @@
 		65103F291C0409360043F948 /* EWB Design Summit */ = {
 			isa = PBXGroup;
 			children = (
-				6539417F1C19386600B5DAB6 /* AppStatus.swift */,
-				6539417C1C191DB800B5DAB6 /* Login / User */,
 				65103F2A1C0409360043F948 /* AppDelegate.swift */,
 				65DDF2641C0D49A700C7588F /* HomeViewController.swift */,
 				65E0500F1C211D2B00BDF841 /* Info */,
@@ -171,16 +158,6 @@
 				65103F4C1C0409370043F948 /* Info.plist */,
 			);
 			path = "EWB Design SummitUITests";
-			sourceTree = "<group>";
-		};
-		6539417C1C191DB800B5DAB6 /* Login / User */ = {
-			isa = PBXGroup;
-			children = (
-				6539417D1C191DE000B5DAB6 /* Person.swift */,
-				65DDF2701C0D652A00C7588F /* WelcomeViewController.swift */,
-				65DDF2681C0D5F6F00C7588F /* RegisterViewController.swift */,
-			);
-			name = "Login / User";
 			sourceTree = "<group>";
 		};
 		65E0500F1C211D2B00BDF841 /* Info */ = {
@@ -283,7 +260,7 @@
 				TargetAttributes = {
 					65103F261C0409360043F948 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 8LELQL34M8;
+						DevelopmentTeam = 6P3E3LZR3T;
 					};
 					65103F3A1C0409370043F948 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -398,16 +375,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				651FC2CF1C28D8360095C2CF /* GMSViewController.swift in Sources */,
-				6539417E1C191DE000B5DAB6 /* Person.swift in Sources */,
 				65DDF26B1C0D64A400C7588F /* LocationsViewController.swift in Sources */,
-				65DDF2711C0D652A00C7588F /* WelcomeViewController.swift in Sources */,
 				65DDF2651C0D49A700C7588F /* HomeViewController.swift in Sources */,
 				65DDF2671C0D49EE00C7588F /* FeedbackViewController.swift in Sources */,
 				65DDF26D1C0D64D300C7588F /* ScheduleViewController.swift in Sources */,
-				653941801C19386600B5DAB6 /* AppStatus.swift in Sources */,
 				65DDF26F1C0D64F500C7588F /* InfoViewController.swift in Sources */,
-				65DDF2691C0D5F6F00C7588F /* RegisterViewController.swift in Sources */,
-				65DDF2631C0D456D00C7588F /* RatingControl.swift in Sources */,
 				65103F2B1C0409360043F948 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,7 +524,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "EWB Design Summit/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.org.ewb.EWB-Design-Summit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -569,7 +541,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "EWB Design Summit/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.org.ewb.EWB-Design-Summit";
 				PRODUCT_NAME = "$(TARGET_NAME)";

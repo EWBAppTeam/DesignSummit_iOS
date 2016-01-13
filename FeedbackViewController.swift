@@ -11,46 +11,62 @@ import WebKit
 
 class FeedbackViewController: UIViewController {
     
-    @IBOutlet weak var ratingControl: RatingControl!
-    
-    @IBOutlet weak var formView: UIView!
-    var webView: WKWebView?
+   
     
     
-    override func loadView() {
-        print("loadView")
-        super.loadView()
-        
-        self.webView = WKWebView()
-        self.view = self.webView!
-        
-    }
+    
+    @IBOutlet weak var myWebView: UIWebView!
+    
+    
 
     override func viewDidLoad() {
         print("View did Load")
         super.viewDidLoad()
         
-//        if let myPDF = NSBundle.mainBundle().URLForResource("DS Jan2016 Info", withExtension: "pdf"){
-//            
-//            if NSFileManager.defaultManager().fileExistsAtPath(myPDF.path!) {
-//                print("file found")
-//                print("at \(myPDF.path!)")
-//            }
-//            
-//            let myURLReq = NSURLRequest(URL: myPDF)
-//            self.webView!.loadRequest(myURLReq)
         
-            
-            
-            
-            // Code for loading PDF from Box or website in general
-            
-            let url = NSURL(string:"https://docs.google.com/forms/d/1vif6hhJ6kdmEAms9XljB_LqFb3za4ksQkjUY51zprEc/viewform?usp=send_form")
-            let req = NSURLRequest(URL:url!)
-            self.webView!.loadRequest(req)
+        
+/*
+        
+        let myurl = NSURL(string:"https://docs.google.com/forms/d/1vif6hhJ6kdmEAms9XljB_LqFb3za4ksQkjUY51zprEc/viewform?usp=send_form")
+        let myrequest = NSURLRequest(URL: myurl! )
+        
+        
+        let cache = NSURLCache()
+        //let URLCache = NSCachedURLResponse
+        
+        print("before loading into cahce")
+        print(cache.memoryCapacity)
+        print(cache.currentMemoryUsage)
+        
+        
+        cache.cachedResponseForRequest(myrequest)
+        
+        print("after loading into cahce")
+        print(cache.memoryCapacity)
+        print(cache.currentMemoryUsage)
+        
+        
+        self.myWebView.loadRequest(myrequest)
         
 
-        // Do any additional setup after loading the view.
+*/
+        
+        
+        let url = NSURL(string: "https://docs.google.com/forms/d/1vif6hhJ6kdmEAms9XljB_LqFb3za4ksQkjUY51zprEc/viewform?usp=send_form")
+        let request = NSURLRequest(URL: url!, cachePolicy: .ReturnCacheDataElseLoad, timeoutInterval: 5.0)
+        
+        //let session = NSURLSession.sharedSession()
+        
+        //session.dataTaskWithRequest(request)
+        
+        
+        self.myWebView.loadRequest(request)
+        
+        
+        
+       
+        
+        
         
     }
 

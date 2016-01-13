@@ -11,14 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     //MARK: Properties
-    var message: String!
-    var name: String!
-    let LoggedInStateKey = "ISLOGGEDIN"
-    var userFound:Int = -3;
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

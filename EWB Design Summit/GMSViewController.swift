@@ -15,17 +15,21 @@ class GMSViewController: UIViewController {
         super.viewDidLoad()
         
         
+        
         let camera = GMSCameraPosition.cameraWithLatitude(-33.86,
             longitude: 151.20, zoom: 11, bearing: 0, viewingAngle:0)
         
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
-        self.view = mapView
+        mapView.settings.myLocationButton = true
+        mapView.settings.compassButton = true
+        
         
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
         marker.title = "Sydney"
         marker.snippet = "Australia"
+        marker.icon = UIImage(named: "house")
         marker.map = mapView
         
         let marker2 = GMSMarker()
@@ -34,6 +38,22 @@ class GMSViewController: UIViewController {
         marker2.snippet = "The best place to live in the world"
         marker2.map = mapView
         
+        let AniseHotelandRestaurant = GMSMarker()
+        AniseHotelandRestaurant.position = CLLocationCoordinate2DMake(11.55539, 104.92473)
+        marker2.title = "AniseHotelandRestaurant"
+        marker2.snippet = "Meeting Point"
+        AniseHotelandRestaurant.map = mapView
+        
+        let TopBananaHotel = GMSMarker()
+        TopBananaHotel.position = CLLocationCoordinate2DMake(11.55546, 104.9261)
+        TopBananaHotel.title = "AniseHotelandRestaurant"
+        TopBananaHotel.snippet = "Meeting Point"
+        TopBananaHotel.map = mapView
+        
+        
+        
+        
+        self.view = mapView
     
     }
 }
