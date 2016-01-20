@@ -25,6 +25,7 @@ class GMSPlacesVC: UIViewController {
     // Add a UIButton in Interface Builder to call this function
     @IBAction func getCurrentPlace(sender: UIButton) {
         
+    
         placesClient?.currentPlaceWithCallback({
             (placeLikelihoodList: GMSPlaceLikelihoodList?, error: NSError?) -> Void in
             if let error = error {

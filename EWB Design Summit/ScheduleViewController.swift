@@ -29,7 +29,7 @@ class ScheduleViewController: UIViewController {
         print("View did Load")
         super.viewDidLoad()
     
-            let url = NSURL(string:"https://docs.google.com/spreadsheets/d/197KreMD10sxggu0Vr5ZoTYP5qZnTukKY5qSNru9s9JA/edit?usp=sharing")
+            let url = NSURL(string:"https://docs.google.com/spreadsheets/d/1KZ_HCw9hqwHVMX9oYz56X9JdGMaGv3WK8kfoUJskiM8/edit?usp=sharing")
             let req = NSURLRequest(URL:url!)
             self.webView!.loadRequest(req)
         }
