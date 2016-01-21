@@ -9,9 +9,13 @@
 import UIKit
 import WebKit
 
-class ScheduleViewController: UIViewController {
-
+class ScheduleViewController: UIViewController, UIWebViewDelegate{
+    
+    @IBOutlet weak var myWebView: UIWebView!
     @IBOutlet var scheduleView: UIView!
+    
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
     var webView: WKWebView?
     
     
@@ -19,28 +23,46 @@ class ScheduleViewController: UIViewController {
         print("loadView")
         super.loadView()
         
-        self.webView = WKWebView()
-        self.view = self.webView!
+        //self.webView = WKWebView()
+        //self.view = self.webView!
+        
+        myWebView.delegate = self
         
     }
     
+    
+   
     
     override func viewDidLoad() {
         print("View did Load")
         super.viewDidLoad()
     
-            let url = NSURL(string:"https://docs.google.com/spreadsheets/d/1KZ_HCw9hqwHVMX9oYz56X9JdGMaGv3WK8kfoUJskiM8/edit?usp=sharing")
+            let url = NSURL(string:"https://docs.google.com/spreadsheets/d/1KZ_HCw9hqwHVMX9oYz56X9JdGMaGv3WK8kfoUJskiM8/pubhtml?gid=1397911395&single=true")
             let req = NSURLRequest(URL:url!)
-            self.webView!.loadRequest(req)
+            self.myWebView!.loadRequest(req)
         }
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        print("view will appear")
+        spinner.startAnimating()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+                print("view did appear")
+        
+    }
+    
+    func webViewDidFinishLoad(myWebView: UIWebView) {
+        spinner.stopAnimating()
+    }
 
+
+    
     /*
     // MARK: - Navigation
 

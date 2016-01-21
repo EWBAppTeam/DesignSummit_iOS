@@ -17,6 +17,7 @@
 		651127131C28CECF0005CDE8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 651127121C28CECF0005CDE8 /* Podfile */; };
 		651D51B91C4759D00074A786 /* GMSPlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D51B81C4759D00074A786 /* GMSPlacesVC.swift */; };
 		651FC2CF1C28D8360095C2CF /* GMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FC2CE1C28D8360095C2CF /* GMSViewController.swift */; };
+		659AD7E71C50991B001E023A /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659AD7E61C50991B001E023A /* EmergencyViewController.swift */; };
 		65DDF2651C0D49A700C7588F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2641C0D49A700C7588F /* HomeViewController.swift */; };
 		65DDF2671C0D49EE00C7588F /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */; };
 		65DDF26B1C0D64A400C7588F /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDF26A1C0D64A400C7588F /* LocationsViewController.swift */; };
@@ -59,6 +60,7 @@
 		651127121C28CECF0005CDE8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		651D51B81C4759D00074A786 /* GMSPlacesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMSPlacesVC.swift; sourceTree = "<group>"; };
 		651FC2CE1C28D8360095C2CF /* GMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMSViewController.swift; sourceTree = "<group>"; };
+		659AD7E61C50991B001E023A /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		65DDF2641C0D49A700C7588F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		65DDF2661C0D49EE00C7588F /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedbackViewController.swift; path = ../FeedbackViewController.swift; sourceTree = "<group>"; };
 		65DDF26A1C0D64A400C7588F /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				65DDF26A1C0D64A400C7588F /* LocationsViewController.swift */,
 				650503731C27BDEC00452F79 /* Feedback */,
 				65103F2E1C0409360043F948 /* Main.storyboard */,
+				659AD7E61C50991B001E023A /* EmergencyViewController.swift */,
 				651D51B81C4759D00074A786 /* GMSPlacesVC.swift */,
 				651FC2CE1C28D8360095C2CF /* GMSViewController.swift */,
 				65103F311C0409360043F948 /* Assets.xcassets */,
@@ -382,6 +385,7 @@
 				65DDF2651C0D49A700C7588F /* HomeViewController.swift in Sources */,
 				65DDF2671C0D49EE00C7588F /* FeedbackViewController.swift in Sources */,
 				651D51B91C4759D00074A786 /* GMSPlacesVC.swift in Sources */,
+				659AD7E71C50991B001E023A /* EmergencyViewController.swift in Sources */,
 				65DDF26D1C0D64D300C7588F /* ScheduleViewController.swift in Sources */,
 				65DDF26F1C0D64F500C7588F /* InfoViewController.swift in Sources */,
 				65103F2B1C0409360043F948 /* AppDelegate.swift in Sources */,
