@@ -8,43 +8,25 @@
 
 import UIKit
 import WebKit
+import Foundation
 
 class ScheduleViewController: UIViewController, UIWebViewDelegate{
     
     @IBOutlet weak var myWebView: UIWebView!
-    @IBOutlet var scheduleView: UIView!
-    
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-    var webView: WKWebView?
-    
-    
-    override func loadView() {
-        print("loadView")
-        super.loadView()
-        
-        //self.webView = WKWebView()
-        //self.view = self.webView!
-        
-        myWebView.delegate = self
-        
-    }
-    
-    
-   
-    
     override func viewDidLoad() {
+        
         print("View did Load")
         super.viewDidLoad()
-    
-            let url = NSURL(string:"https://docs.google.com/spreadsheets/d/1KZ_HCw9hqwHVMX9oYz56X9JdGMaGv3WK8kfoUJskiM8/pubhtml?gid=1397911395&single=true")
-            let req = NSURLRequest(URL:url!)
-            self.myWebView!.loadRequest(req)
-        }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        myWebView.delegate = self
+        
+        
+        //Make request to load schedule page
+        let url = NSURL(string:"https://docs.google.com/spreadsheets/d/1KZ_HCw9hqwHVMX9oYz56X9JdGMaGv3WK8kfoUJskiM8/pub?gid=1397911395&single=true&output=pdf")
+        let req = NSURLRequest(URL:url!)
+        self.myWebView!.loadRequest(req)
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -52,26 +34,18 @@ class ScheduleViewController: UIViewController, UIWebViewDelegate{
         spinner.startAnimating()
     }
     
-    override func viewDidAppear(animated: Bool) {
-                print("view did appear")
-        
-    }
     
+    // Stop the spinning wheel when content has finished loading. Used via the webview delegate.
     func webViewDidFinishLoad(myWebView: UIWebView) {
+        print("Web View Did Finish Load")
         spinner.stopAnimating()
     }
 
-
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    */
 
 }
 

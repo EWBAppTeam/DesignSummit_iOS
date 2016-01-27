@@ -28,7 +28,7 @@ class InfoViewController: UIViewController {
         print("View did Load")
         super.viewDidLoad()
         
-        if let myPDF = NSBundle.mainBundle().URLForResource("DS Jan2016 Info", withExtension: "pdf"){
+        if let myPDF = NSBundle.mainBundle().URLForResource("DS Feb 2016", withExtension: "pdf"){
             
             if NSFileManager.defaultManager().fileExistsAtPath(myPDF.path!) {
                 print("file found")
