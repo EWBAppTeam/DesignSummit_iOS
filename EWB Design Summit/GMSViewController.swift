@@ -28,6 +28,7 @@ class GMSViewController: UIViewController {
         mapView.settings.compassButton = true
     
         
+        
         //Airport
         
         let InternationalAirport = GMSMarker()
@@ -153,12 +154,12 @@ class GMSViewController: UIViewController {
         SoryaKayakingCafe.map = mapView
         SoryaKayakingCafe.icon = cafe
         
-        let CentralCafe = GMSMarker()
-        CentralCafe.position = CLLocationCoordinate2DMake(13.355303, 103.854319)
-        CentralCafe.title = "Central Cafe"
-        CentralCafe.snippet = "Restuarant"
-        CentralCafe.map = mapView
-        CentralCafe.icon = cafe
+        let LeTonleRestaurant = GMSMarker()
+        LeTonleRestaurant.position = CLLocationCoordinate2DMake(12.490942, 106.016407)
+        LeTonleRestaurant.title = "Le Tonle Restaurant"
+        LeTonleRestaurant.snippet = "Restuarant"
+        LeTonleRestaurant.map = mapView
+        LeTonleRestaurant.icon = cafe
         
         let MtEverestRestaurant = GMSMarker()
         MtEverestRestaurant.position = CLLocationCoordinate2DMake(11.553922, 104.925455)
@@ -169,10 +170,25 @@ class GMSViewController: UIViewController {
         
         let FriendstheRestuarant = GMSMarker()
         FriendstheRestuarant.position = CLLocationCoordinate2DMake(11.566837, 104.929218)
-        FriendstheRestuarant.title = "Mt Everest Restaurant"
+        FriendstheRestuarant.title = "Friends the Restaurant"
         FriendstheRestuarant.snippet = "Restuarant"
         FriendstheRestuarant.map = mapView
         FriendstheRestuarant.icon = cafe
+        
+        let HengHengRestaurant = GMSMarker()
+        HengHengRestaurant.position = CLLocationCoordinate2DMake(12.483605, 106.017214)
+        HengHengRestaurant.title = "Heng Heng Restaurant"
+        HengHengRestaurant.snippet = "Restuarant"
+        HengHengRestaurant.map = mapView
+        HengHengRestaurant.icon = cafe
+        
+        let PonNorReayRestaurant  = GMSMarker()
+        PonNorReayRestaurant .position = CLLocationCoordinate2DMake(12.490726, 106.015847)
+        PonNorReayRestaurant .title = "Pon Nor Reay Restaurant"
+        PonNorReayRestaurant .snippet = "Restuarant"
+        PonNorReayRestaurant .map = mapView
+        PonNorReayRestaurant .icon = cafe
+        
         
         
         
@@ -194,20 +210,8 @@ class GMSViewController: UIViewController {
         LuckySupermarket.icon = shop
         
         
-        
-        // Bars
-        let bar = UIImage(named: "bar")
-        
-        
-        let TopBanana = GMSMarker()
-        TopBanana.position = CLLocationCoordinate2DMake(11.55546, 104.9261)
-        TopBanana.title = "Top Banana"
-        TopBanana.snippet = "Drinking Point"
-        TopBanana.map = mapView
-        TopBanana.icon = bar
-        
         // Books
-        let book = UIImage(named: "newspaper")
+        let book = UIImage(named: "library")
         
         let InternationalBookstore = GMSMarker()
         InternationalBookstore.position = CLLocationCoordinate2DMake(11.55616, 104.92323)
@@ -234,6 +238,13 @@ class GMSViewController: UIViewController {
         NAGAClinic.snippet = "Health Care"
         NAGAClinic.map = mapView
         NAGAClinic.icon = pharmacy
+        
+        let VatanakPharmacy = GMSMarker()
+        VatanakPharmacy.position = CLLocationCoordinate2DMake( 12.484202, 106.017843)
+        VatanakPharmacy.title = "Vatanak Pharmacy"
+        VatanakPharmacy.snippet = "Health Care"
+        VatanakPharmacy.map = mapView
+        VatanakPharmacy.icon = pharmacy
         
         let InternationalSOSMedicalandDentalClinic = GMSMarker()
         InternationalSOSMedicalandDentalClinic.position = CLLocationCoordinate2DMake(11.55966, 104.925)
@@ -327,9 +338,15 @@ class GMSViewController: UIViewController {
         
         let TheFlicks = GMSMarker()
         TheFlicks.position = CLLocationCoordinate2DMake(11.549545, 104.920763)
-        TheFlicks.title = "Russian Market"
+        TheFlicks.title = "The Flicks"
         TheFlicks.snippet = "Cinema"
         TheFlicks.map = mapView
+        
+        let CambodianPrideTours = GMSMarker()
+        CambodianPrideTours.position = CLLocationCoordinate2DMake(12.484677, 106.016933)
+        CambodianPrideTours.title = "Cambodian Pride Tours"
+        CambodianPrideTours.snippet = "POI"
+        CambodianPrideTours.map = mapView
         
         //
         
@@ -345,8 +362,8 @@ class GMSViewController: UIViewController {
         CRDTOfficeKratie.snippet = "Emergency Contact"
         CRDTOfficeKratie.map = mapView
         
-        self.view = mapView
         
+        self.view = mapView
     
     }
 }

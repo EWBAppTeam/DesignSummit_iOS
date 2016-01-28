@@ -39,19 +39,6 @@ class InfoViewController: UIViewController {
             self.webView!.loadRequest(myURLReq)
         }
         
-        
-        
-       
-        
-        
-        
-        // Code for loading PDF from Box or website in general
-        /*
-       
-        let url = NSURL(string:"https://ewb.box.com/s/wja5zji87n4wpe7xy4pzaqlno4km4r5y")
-        let req = NSURLRequest(URL:url!)
-        self.webView!.loadRequest(req)
-        */
     }
     
     override func didReceiveMemoryWarning() {
